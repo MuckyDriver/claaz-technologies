@@ -1,0 +1,34 @@
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+    background-color: black;
+}
+
+/* Coming Soon */
+div.coming-soon {
+    font-family: 'Rubik', sans-serif;
+    font-size: larger;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    /* Animation */
+    animation-name: inoutfade;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes inoutfade {
+    0% { opacity: 1; }
+    50% { opacity: 0.25; }
+    100% { opacity: 1; }
+}
